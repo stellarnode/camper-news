@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Camper News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/icono/1.3.0/icono.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Camper News</h1>
+        <h3 class="text-center">Latest news from the Free Code Camp Community</h3>
+      </div>
+
+
+      <div id="content-container">
+        <!-- All the content will go here. Nowhere else -->
+      </div>
+
+
+      <!-- Here go templates. Non-visible -->
+
+
+      <!-- Content block template -->
+
+      <div id="content-block" class="row content-container">
+        <div id="column1" class="col-md-4 col-sm-6 col-xs-12"></div>
+        <div id="column2" class="col-md-4 col-sm-6 col-xs-12"></div>
+        <div id="column3" class="col-md-4 col-sm-6 col-xs-12"></div>
+      </div>
+
+      <!-- End of content block template -->
+
+
+      <!-- Load More button template -->
+      <div id="load-more-btn" class="row load-more">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+          <a href="#" class="btn btn-lg btn-default">Load More</a>
+        </div>
+      </div>
+      <!-- End of Load More button template -->
+      
+      <div class="row">
+
+        <!-- Template for article type post -->
+        <article id="template-article" class=article-block>
+          <a href="" class="feature-link" target="_blank">
+            <div class="feature">
+              <div class="overlay-article"><i class="icono-plus"></i></div>
+              <img src="http://placehold.it/640x380" class="img-responsive" alt="" />
+            </div>
+          </a>
+          <div class="lead-area">
+            <div class="info-area">
+              <div class="date">December 22, 2015</div>
+              <div class="upvotes"><i class="fa fa-heart"></i><span class="number"> 78</span></div>
+            </div>
+            <div class="title-area">
+              <a href="" class="title-link" target="_blank"><h4 class="title-article">This is some title</h4></a>
+            </div>
+          </div>
+        </article>
+        <!-- End of template for article type post -->
+
+
+        <!-- Template for post with no picture -->
+        <article id="template-post" class=post-block>
+          <div class="avatar-area">
+            <a href="" class="feature-link" target="_blank">
+              <div class="avatar">
+                <div class="overlay-post"><i class="icono-plus"></i></div>
+                <img src="http://placehold.it/200x200" class="img-responsive" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="lead-area-post">
+            <div class="info-area">
+              <div class="date">December 23, 2015</div>
+              <div class="upvotes"><i class="fa fa-heart"></i><span class="number"> 8</span></div>
+            </div>
+            <div class="title-area">
+              <a href="" class="title-link" target="_blank"><h6 class="title-post">Here goes another title for the post</h6></a>
+            </div>
+          </div>
+        </aricle>
+        <!-- End of template for post with no picture -->
+      
+      </div>
+      
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <p class="text-center">
+          Crafted with <i class="fa fa-heart"></i> by <a href="http://stellarnode.ru">stellarnode.</a>
+        </p>
+      </footer>
+
+
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+      <script src="scripts.js"></script>
+      
+    </body>
+  </html>

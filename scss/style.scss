@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700,800&subset=latin,cyrillic);
+
+// Bootstrap colors
+
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         #777;
+$gray-light:   #999;
+$gray-lighter: #ccc; 
+
+$brand-primary: darken(#428bca, 6.5%); // #337ab7
+$brand-success: #5cb85c;
+$brand-info:    #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger:  #d9534f;
+
+// Color-scheme colors;
+
+$main-color: #999;
+$accent: #777;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+.btn {
+  border-radius: 0;
+  color: $gray-light;
+}
+
+.btn:hover {
+  color: $gray;
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+  color: $gray;
+}
+
+.row,
+.content-container {
+  //display: flex;
+  //align-items: flex-start;
+  //flex-wrap: wrap;
+}
+
+#template-article,
+#template-post,
+#content-block,
+#load-more-btn {
+  display: none;
+}
+
+.article,
+.post {
+  position: relative;
+  width: 100%;
+}
+
+.article-block {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 3% 0 3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 1px 1px 3px $gray-lighter;
+}
+
+.post-block {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  margin: 3% 0 3%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px $gray-lighter;
+}
+
+.load-more {
+  display: block;
+  margin-top: 40px;
+}
+
+.feature-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: black;
+  overflow: hidden;
+}
+
+/*
+.feature {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+
+.feature img,
+.avatar img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.feature:hover img,
+.avatar:hover img {
+  transform: scale(1.15);
+}
+
+
+
+.overlay-article,
+.overlay-post {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+.overlay-post {
+  
+}
+
+.overlay-article:hover,
+.overlay-post:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+
+
+i.icono-plus,
+i.icono-plusCircle,
+i.fa-plus-square-o,
+i.icono-caretRightCircle {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: white;
+  z-index: 2000;
+}
+
+.avatar-area {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.lead-area {
+  padding: 3%;
+}
+
+.lead-area-post {
+  display: block;
+  width: 75%;
+  float: left;
+  padding: 0 5px 0 15px;
+}
+
+.fa-heart {
+  color: $gray-light;
+}
+
+.date,
+.upvotes {
+  display: inline-block;
+  color: $gray-light;
+}
+
+.upvotes {
+  float: right;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.title-article {
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.title-post {
+  font-size: 110%;
+  font-weight: 700;
+}
+
+a .title-article,
+a .title-post {
+  color: $gray-light;
+  
+  &:hover {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+}
+
+
+.site-footer {
+  height: 50px;
+}
+
+footer,
+.site-footer,
+.site-footer > p {
+  margin: 300px 30px 30px 30px !important;
+  font-size: 0.85em !important;
+  font-weight: 300 !important;
+  color: #999;
+}
+
+.site-footer > p > a {
+  color: #999;
+  border: none;
+}
+
+.site-footer > p > a:hover {
+  color: #E84A5F;
+}
+
+footer .fa-heart {
+  color: #E84A5F;
+}
+
+
